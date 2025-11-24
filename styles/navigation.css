@@ -1,0 +1,126 @@
+
+.navigation-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+    background-color:green;
+    color: #cbcbcb;
+    height:150px;
+    width:100%;
+}
+
+
+.navigation-wrapper > .left-column{
+    display: flex;
+    align-items: center;
+    }
+    
+.navigation-wrapper >.left-column >.contact-hours-wrapper{
+     color: #cbcbcb;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 1fr;
+   
+}
+
+
+.left-column >.contact-hours-wrapper >.phone{
+    color:#cbcbcb;
+    font-size: 20px;
+   
+}
+
+.left-column >.contact-hours-wrapper > .hours{
+    color: #cbcbcb;
+    font-size: 0.8em;
+    
+}
+
+.navigation-wrapper >.left-column >.icons i { 
+    margin-right: 15px;
+    padding-left:30px ;
+    color:#cbcbcb;
+    font-size:3em;
+}
+
+.navigation-wrapper >.left-column >.icons i{
+    font-size:3em;
+}
+
+.navigation-wrapper >.right-column >.contact-icon i{
+    margin-right: 25px;
+    font-size: 3em;
+    padding-right:20px;
+    color: #cbcbcb;
+    font-size: 3em;
+   padding-top: 10px;
+
+}
+
+.navigation-wrapper >.right-column >.contact-icon i:hover{
+    color:#cea135;
+    transition: 0.5s;
+}
+
+
+.text-wrapper h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family:sans-serif ;
+    text-align: center;
+}
+
+.text-wrapper h3{
+text-align: center;
+font-family: sans-serif;
+font-size: 0.9em;
+
+}
+ .links-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:20px;
+}
+
+.links-wrapper > .nav-link a{
+    
+    text-decoration: none;
+    color:#cbcbcb;
+    font-family: sans-serif;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+    transition: 0.5s;
+}
+ .links-wrapper > .nav-link a:hover{
+        letter-spacing: 2px;
+        color:#cea135;
+    }
+
+
+    .navigation-wrapper > .right-column{
+display: flex;
+text-align: center;
+    }
+
+    .navigation-wrapper >.right-column >.Address-wrapper{
+       padding-right: 20px;
+       padding-top: 10px;
+        text-align: right;
+    } 
+    
+    .navigation-wrapper >.right-column >.Address-wrapper a{
+text-decoration: none;
+color: #cbcbcb;
+transition:0.5s;
+
+    } 
+    
+    .navigation-wrapper >.right-column >.Address-wrapper a:hover{
+        color:#cea135;
+
+    }

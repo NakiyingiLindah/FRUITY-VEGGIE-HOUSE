@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+    .hero-section{
+        background-image: url(../Images/8.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+       min-height:50vh;
+        width: 100%;
+        border-bottom: solid 10px white;
+        
+    }
+
+    .Mid-way-section{
+        display: flex;
+        width:100%;
+        height:400px;
+        background-color: #cea135;
+        box-shadow:inset  0px -26px 79px -8px rgba(0, 0,0,0.58);
+    }
+
+
+    .Mid-way-section >.columns-wrapper{
+        align-items: center;
+        text-align: center;
+        display: flex;
+     
+   
+
+    }
+
+    .Mid-way-section >.columns-wrapper >.column{
+        padding:50px;
+        margin: 80px;
+        text-align: center;
+        border-bottom: 5px solid transparent;
+        border-radius: 10px;
+        transition: 1s;
+   
+    }
+
+    .Mid-way-section >.columns-wrapper >.column:hover{
+       border-bottom: 5px solid #11122b;
+    }
+
+    p{
+      color: #11122b; 
+      font-weight: 900; 
+      font-size: 20px;
+      font-family: sans-serif;
+    }
+
+    .column i{
+        font-size: 3em;
+        color: #11122b;
+    }
+
+    h4{
+       font-size: 15px;
+       font-family: sans-serif;
+
+    }
+
+/* 📱 Mobile Devices (up to 600px) */
+/* -------------------------------- */
+@media (max-width: 600px) {
+    .navigation-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .left-column, .center-column, .right-column {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .center-column .text-wrapper h1 {
+        font-size: 22px;
+    }
+
+    .center-column .text-wrapper h3 {
+        font-size: 16px;
+    }
+
+    .links-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Mid-way-section {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .columns-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 90%;
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .map iframe {
+        height: 200px;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+        height: 900px;
+    }
+
+    .footer .links-wrapper {
+        flex-direction: column;
+    }
+
+    .social-media-icons-wrapper {
+        justify-content: center;
+    }
+
+    .contact-hours-wrapper {
+        flex-direction: column;
+    }
+
+    .Address-wrapper a {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+
+
+    .hero-section{
+        background-image: url(../Images/8.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment:scroll;
+        min-height:50vh;
+        width: 100%;
+        border-bottom: solid 10px white;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* -------------------------------- */
+/* 🧾 Tablet Devices (601px–1024px) */
+/* -------------------------------- */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .navigation-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-column, .center-column, .right-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .links-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .Mid-way-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .column {
+        flex: 1 1 45%;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .footer .links-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+ .hero-section{
+        background-image: url(../Images/8.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment:scroll;
+        min-height:50vh;
+        width: 100%;
+        border-bottom: solid 10px white;
+        
+    }
+
+
+}
