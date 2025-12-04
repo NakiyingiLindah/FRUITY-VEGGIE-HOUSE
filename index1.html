@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+ <div class="products-section">
+
+  <h1>Our Products</h1>
+
+  <div class="search-filter">
+    <input type="text" id="searchInput" class="search-box" placeholder="Search product...">
+  </div>
+
+  <div class="products-grid" id="productsGrid">
+
+    <div class="product-card">
+      <img src="img1.jpg" alt="">
+      <h3>Apple</h3>
+      <p class="price">UGX 2000</p>
+    </div>
+
+    <div class="product-card">
+      <img src="img2.jpg" alt="">
+      <h3>Banana</h3>
+      <p class="price">UGX 3000</p>
+    </div>
+
+    <div class="product-card">
+      <img src="img3.jpg" alt="">
+      <h3>Watermelon</h3>
+      <p class="price">UGX 5000</p>
+    </div>
+
+  </div>
+
+</div>
+   
+
+
+
+<script>
+  const searchInput = document.getElementById("searchInput");
+  const products = document.querySelectorAll(".product-card");
+
+  searchInput.addEventListener("input", function () {
+    const value = searchInput.value.toLowerCase();
+
+    products.forEach(product => {
+      const name = product.querySelector("h3").textContent.toLowerCase();
+
+      if (name.includes(value)) {
+        product.style.display = "block";
+      } else {
+        product.style.display = "none";
+      }
+    });
+  });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,13 +1,88 @@
 
-.navigation-wrapper{
+/* .navigation-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top:20px;
-    padding-bottom: 20px;
+    flex-wrap: wrap;      allow items to wrap on very small screens
+    padding: 10px 20px;
+    background-color: green;
+    color: #cbcbcb;
+    height: auto;         allow it to grow if needed
+    min-height: 150px;    optional
+}
+
+.left-column,
+.center-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; center-column can override to center
+    flex-shrink: 1;          allow shrinking on smaller screens
+    min-width: 0;            prevents overflow
+}
+.center-column {
+    flex: 1;                 take remaining space
+    align-items: center;
+    text-align: center;
+}
+.right-column {
+    align-items: flex-end;   stick to right
+    text-align: right;
+}
+
+.text-wrapper h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.text-wrapper h3 {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.links-wrapper {
+    display: flex;
+    flex-wrap: wrap;         allow wrapping on small screens
+    justify-content: center;
+    gap: 10px;
+}
+
+.icons i,
+.contact-icon i {
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    .icons i,
+    .contact-icon i {
+        font-size: 1.5em;
+        margin: 0 5px;
+        padding: 0;
+    }
+    .text-wrapper h1 {
+        font-size: 1.2rem;
+    }
+    .links-wrapper {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+ */
+
+
+
+ 
+.navigation-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:10px;
+    padding-bottom: 10px;
     background-color:green;
     color: #cbcbcb;
-    height:150px;
+    min-height:40vh;
+    height: auto;
     width:100%;
 }
 
@@ -28,7 +103,7 @@
 
 .left-column >.contact-hours-wrapper >.phone{
     color:#cbcbcb;
-    font-size: 20px;
+    font-size: 10px;
    
 }
 
@@ -65,11 +140,14 @@
 }
 
 
+
+
 .text-wrapper h1{
     font-size: 30px;
     font-weight: bold;
     font-family:sans-serif ;
     text-align: center;
+    flex: 1;
 }
 
 .text-wrapper h3{
@@ -90,10 +168,10 @@ font-size: 0.9em;
     text-decoration: none;
     color:#cbcbcb;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size:15px;
     align-items: center;
     justify-content: space-between;
-    padding:20px;
+    padding:10px;
     transition: 0.5s;
 }
  .links-wrapper > .nav-link a:hover{
@@ -111,6 +189,7 @@ text-align: center;
        padding-right: 20px;
        padding-top: 10px;
         text-align: right;
+        font-size: 0.8rem;
     } 
     
     .navigation-wrapper >.right-column >.Address-wrapper a{
@@ -124,3 +203,4 @@ transition:0.5s;
         color:#cea135;
 
     }
+

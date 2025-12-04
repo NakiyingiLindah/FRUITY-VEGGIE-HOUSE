@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+.products-section{
+    text-align: center;
+    padding: 20px 30px;
+}
+
+
+.products-section h1{
+font-size:3rem ;
+color: green;
+margin-bottom: 30px;
+}
+
+.search-filter{
+margin-bottom: 30px;
+}
+
+.search-box{
+width:100%;
+max-width: 400px;
+border: 1px solid #ccc;
+border-radius: 12px;
+font-size: 1rem;
+padding: 12px 15px;
+}
+
+.filter-btn{
+   width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 20px;
+
+}
+
+
+
+.products-grid{
+   display: grid;
+    gap:1rem;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+.product-card{
+    background-color:#fff ;
+    border-radius: 12px;
+    padding:15px ;
+    box-shadow: 0 10px 4px  rgba(0,0,0,0.05);
+    transition: 0.3s;
+
+}
+
+.product-card:hover{
+    transform: translateY(-5px);
+}
+   
+.product-card img{
+object-fit: cover;
+width: 100%;
+max-width: 400px;
+height:200px;
+border-radius: 10px;
+
+}
+
+.product-card h3 {
+  margin: 12px 0;
+  font-size: 1.2rem;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.product-card button:hover {
+  background: darkgreen;
+}

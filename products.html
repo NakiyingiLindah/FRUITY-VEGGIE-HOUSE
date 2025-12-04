@@ -1,101 +1,198 @@
-*+<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
 
-body{
-height: 100vh;
-display: flex;
-align-items: center;
-background:purple;
-}
-.slide{
-position: relative;
-width: 60%;
-overflow: hidden;
-}
-.images{
-    display: flex;
-    width: 100%;
-}
-
-.images img{
-height:200px;
-width:100%;
-transition: all 0.15s ease ;
-
-}
-.images input{
-    display: none;
-}
-.dots{
-    display: flex;
-    justify-content: center;
-    margin:5px;
-}
-.dots label{
-height: 10px;
-width:10px;
-border-radius:50%;
-border: solid #fff 3px;
-cursor: pointer;
-transition: all 0.15s ease;
-margin:5px;
-}
-
-.dots label:hover {background: #fff;}
-#img1:checked ~  .m1 {
-    margin-left: 0;
-}
-#img2:checked ~  .m2 {
-    margin-left: -100%;
-}
-#img3:checked ~  .m3 {
-    margin-left: -200%;
-}
-#img4:checked ~ .m4 {
-    margin-left: -300%;
-}
-#img5:checked ~ .m8 {
-    margin-left: -400%;
-}
-
-</style>
-
+    <link rel="stylesheet" href="styles/products.css">
 </head>
 <body>
-    
-<div class="slider">
-    <div class="images">
-        <input type="radio" name="slide" id="img1">
-        <input type="radio" name="slide" id="img2">
-        <input type="radio" name="slide" id="img3">
-        <input type="radio" name="slide" id="img4">
-        <input type="radio" name="slide" id="img8">
-    
-        <img src="1.jpg"  class="m1" alt="img1">
-        <img src="2.jpg"  class="m2" alt="img2">
-        <img src="3.jpg"  class="m3" alt="img3">
-        <img src="4.jpg" class="m4" alt="img4">
-        <img src="8.jpg" class="m5" alt="img8">
+
+  <section class="products-section">
+  <h1>Our Fresh Products</h1>
+
+
+  <div class="search-filter">
+    <input type="text" placeholder="Search product..." class="search-box">
+  </div>
+
+
+  <!-- Category Buttons -->
+  <div class="category-buttons">
+    <button class="filter-btn" data-category="all">All</button>
+    <button class="filter-btn" data-category="fruits">Fruits</button>
+    <button class="filter-btn" data-category="vegetables">Vegetables</button>
+    <button class="filter-btn" data-category="herbs">Herbs</button>
+  </div>
+
+  <!-- PRODUCTS GRID -->
+  <div class="products-grid">
+
+    <!-- ========== FRUITS ========== -->
+    <div class="product-card" data-category="fruits">
+      <img src="images/apples.jpg" alt="Fresh Red Apples">
+      <h3>Apples</h3>
+      <p class="desc">Fresh, juicy red apples packed with fiber and vitamins.</p>
+      <p class="price">UGX 5,000 / Kg</p>
+      <button class="add-cart">Add to Cart</button>
     </div>
-    
-    
-    <div class="dots">
-    <label for="img1"></label>
-    <label for="img2"></label>
-    <label for="img3"></label>
-    <label for="img4"></label>
-    <label for="img5"></label>
-    
+
+    <div class="product-card" data-category="fruits">
+      <img src="images/bananas.jpg" alt="Sweet ripe bananas">
+      <h3>Bananas</h3>
+      <p class="desc">Sweet and energy-rich bananas ideal for breakfast and smoothies.</p>
+      <p class="price">UGX 3,000 / Bunch</p>
+      <button class="add-cart">Add to Cart</button>
     </div>
-    
-    
-    
-    
-     
+
+    <div class="product-card" data-category="fruits">
+      <img src="images/oranges.jpg" alt="Citrus oranges">
+      <h3>Oranges</h3>
+      <p class="desc">Vitamin C–rich fresh oranges with a bright citrus flavor.</p>
+      <p class="price">UGX 4,000 / Kg</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+<div class="product-card" data-category="fruits">
+      <img src="images/watermelon.jpg" alt="watermelon">
+      <h3>Watermelon</h3>
+      <p class="desc">Refreshing watermelon . Perfect for hot days and fruit salads.</p>
+      <p class="price">UGX 7,000 / Kg</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+
+<div class="product-card" data-category="fruits">
+      <img src="images/mangoes.jpg" alt="mangoes">
+      <h3>Mangoes</h3>
+      <p class="desc">Ripe mangoes ideal for eating fresh and making smoothies</p>
+      <p class="price">UGX 4,000 / Kg</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+
+<div class="product-card" data-category="fruits">
+      <img src="images/pineapples.jpg" alt="pineapples">
+      <h3>Mangoes</h3>
+      <p class="desc">Juicy packed pineapples .Perfect for fresh snacking and smoothies.</p>
+      <p class="price">UGX 4,500 / Kg</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- ========== VEGETABLES ========== -->
+    <div class="product-card" data-category="vegetables">
+      <img src="images/tomatoes.jpg" alt="Fresh Tomatoes">
+      <h3>Tomatoes</h3>
+      <p class="desc">Red, juicy tomatoes perfect for salads, stews, and sauces.</p>
+      <p class="price">UGX 2,500 / Kg</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-category="vegetables">
+      <img src="images/cabbage.jpg" alt="Green cabbage">
+      <h3>Cabbage</h3>
+      <p class="desc">Firm green cabbage ideal for salads, stir-fries, and stews.</p>
+      <p class="price">UGX 2,000 / Head</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-category="vegetables">
+      <img src="images/carrots.jpg" alt="Sweet carrots">
+      <h3>Carrots</h3>
+      <p class="desc">Sweet, crunchy carrots loaded with Vitamin A.</p>
+      <p class="price">UGX 1,500 / Kg</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- ========== HERBS ========== -->
+    <div class="product-card" data-category="herbs">
+      <img src="images/ginger.jpg" alt="Fresh ginger root">
+      <h3>Ginger</h3>
+      <p class="desc">Fresh ginger root perfect for tea, cooking, and boosting immunity.</p>
+      <p class="price">UGX 1,000 / Piece</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-category="herbs">
+      <img src="images/garlic.jpg" alt="Garlic bulbs">
+      <h3>Garlic</h3>
+      <p class="desc">Flavourful garlic cloves used for cooking and health remedies.</p>
+      <p class="price">UGX 500 / Piece</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-category="herbs">
+      <img src="images/mint.jpg" alt="Fresh mint leaves">
+      <h3>Mint</h3>
+      <p class="desc">Refreshing mint leaves perfect for drinks, tea, and garnishing.</p>
+      <p class="price">UGX 2,000 / Bunch</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!--  
+  <div class="products-grid">
+    <div class="product-card">
+      <img src="images/apple.jpg" alt="Red Apples">
+      <h3>Red Apples</h3>
+      <p class="price">UGX 5,000 / Kg</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/banana.jpg" alt="Bananas">
+      <h3>Bananas</h3>
+      <p class="price">UGX 3,000 / Bunch</p>
+      <button>Add to Cart</button>
+    </div>
+
+    Duplicate more product cards
+  </div>
+</section>
+-->
+
+
+
+<script>
+const SearchBox = document.querySelector('.search-box');
+const Productscard = document.querySelectorAll('.product-card');
+
+SearchBox.addEventListener('keyup', function() {
+  let value = this.value.toLowerCase();
+
+  Productscard.forEach(card => {
+    let name = card.querySelector('h3').textContent.toLowerCase();
+
+    // Use display type based on your layout (grid → block works fine)
+    card.style.display = name.includes(value) ? "block" : "none";
+  });
+});
+
+
+
+const filterBtns = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.product-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    let category = btn.dataset.category;
+
+    cards.forEach(card => {
+      card.style.display =
+        category === "all" || card.dataset.category === category
+        ? "block"
+        : "none";
+    });
+  });
+});
+
+
+</script>
+
+
 </body>
 </html>

@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    line-height: 1.6;
 }
 
     .hero-section{
@@ -22,6 +23,9 @@ body{
         height:400px;
         background-color: #cea135;
         box-shadow:inset  0px -26px 79px -8px rgba(0, 0,0,0.58);
+        /* margin:20px; */
+        /* padding:40px; */
+
     }
 
 
@@ -29,14 +33,12 @@ body{
         align-items: center;
         text-align: center;
         display: flex;
-     
-   
 
     }
 
     .Mid-way-section >.columns-wrapper >.column{
-        padding:50px;
-        margin: 80px;
+        padding:20px;
+        margin: 20px;
         text-align: center;
         border-bottom: 5px solid transparent;
         border-radius: 10px;
@@ -66,9 +68,46 @@ body{
 
     }
 
+ .map frame {
+    border-radius: 12px;
+    width: 100%;
+    margin: 20px  30px;
+    padding: 20px 30px;
+  
+    }
+
+
+.contact-map{
+    width:100%;
+    /* max-width: 700px; */
+    /* margin: 30px auto; */
+    position: relative;
+    min-height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.contact-map iframe{
+    width: 100%;
+    border-radius: 10px;
+    border: 0; 
+  position: absolute;
+  height: 100%;
+  border: 0;
+  left: 0;
+  /* top: 70px; */
+}
+
+
+
+
+
+
+
 /* 📱 Mobile Devices (up to 600px) */
 /* -------------------------------- */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .navigation-wrapper {
         flex-direction: column;
         align-items: center;
@@ -134,7 +173,7 @@ body{
     }
 
     .Address-wrapper a {
-        display: inline-block;
+        /* display: inline-block; */
         margin-top: 10px;
     }
 
@@ -169,9 +208,9 @@ body{
 /* -------------------------------- */
 @media (min-width: 601px) and (max-width: 1024px) {
     .navigation-wrapper {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* text-align: center; */
     }
 
     .left-column, .center-column, .right-column {
@@ -180,8 +219,8 @@ body{
     }
 
     .links-wrapper {
-        flex-wrap: wrap;
-        justify-content: center;
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
         gap: 15px;
     }
 
