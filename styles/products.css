@@ -72,7 +72,7 @@ padding: 12px 15px;
 .product-card img{
 object-fit: cover;
 width: 100%;
-max-width: 400px;
+max-width: 350px;
 height:200px;
 border-radius: 10px;
 
@@ -82,6 +82,13 @@ border-radius: 10px;
   margin: 12px 0;
   font-size: 1.2rem;
 }
+
+
+.product-card p{
+  font-size:12px;
+}
+
+
 
 .price {
   font-size: 1rem;
@@ -103,4 +110,43 @@ border-radius: 10px;
 
 .product-card button:hover {
   background: darkgreen;
+}
+
+
+.cart-icon {
+  /* position: fixed; */
+  top: 20px;
+  right: 20px;
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  /* z-index: 999; */
+}
+
+.cart-count {
+  background: black;
+  padding: 3px 8px;
+  border-radius: 50%;
+  margin-left: 5px;
+  font-size: 0.9rem;
+}
+
+
+.empty-cart {
+  text-align: center;
+  padding: 40px;
+}
+
+.shop-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }

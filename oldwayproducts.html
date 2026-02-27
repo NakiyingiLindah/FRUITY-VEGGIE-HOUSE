@@ -1,0 +1,197 @@
+ <!-- old way of displaying products when html is in control -->
+  <!-- PRODUCTS GRID -->
+  <div class="products-grid">
+
+    <!-- ========== FRUITS ========== -->
+    <div class="product-card" data-category="fruits">
+      <img src="images/apples.jpg" alt="Fresh Red Apples">
+      <h3>Apples</h3>
+      <p class="desc">Fresh, juicy red apples packed with fiber and vitamins.</p>
+      <p class="price" data-price="5000">UGX 5,000 / Kg</p>
+      <button onclick="addToCart('Apples', 5000)" class="add-cart">Add to Cart</button>
+      <h2 class="cart-total"></h2>
+
+    </div>
+
+    <div class="product-card" data-category="fruits">
+      <img src="images/bananas.jpg" alt="Sweet ripe bananas">
+      <h3>Bananas</h3>
+      <p class="desc">Sweet and energy-rich bananas ideal for breakfast and smoothies.</p>
+      <p class="price" data-price="3000">UGX 3,000 / Bunch</p>
+      <button onclick="addToCart('Bananas', 3000)" class="add-cart">Add to Cart</button>
+
+    </div>
+
+    <div class="product-card" data-category="fruits">
+      <img src="images/oranges.jpg" alt="Citrus oranges">
+      <h3>Oranges</h3>
+      <p class="desc">Vitamin C–rich fresh oranges with a bright citrus flavor.</p>
+      <p class="price" data-price="4000">UGX 4,000 / Kg</p>
+        <button onclick="addToCart('Oranges', 4000)" class="add-cart">Add to Cart</button>
+    </div>
+
+<div class="product-card" data-category="fruits">
+      <img src="images/watermelon.jpg" alt="watermelon">
+      <h3>Watermelon</h3>
+      <p class="desc">Refreshing watermelon . Perfect for hot days and fruit salads.</p>
+      <p class="price" data-price="7000">UGX 7,000 / Kg</p>
+        <button onclick="addToCart('Watermelon', 7000)" class="add-cart">Add to Cart</button>
+    </div>
+
+
+<div class="product-card" data-category="fruits">
+      <img src="images/mangoes.jpg" alt="mangoes">
+      <h3>Mangoes</h3>
+      <p class="desc">Ripe mangoes ideal for eating fresh and making smoothies</p>
+      <p class="price" data-price="4000">UGX 4,000 / Kg</p>
+        <button onclick="addToCart('Mangoes', 4000)" class="add-cart">Add to Cart</button>
+    </div>
+
+
+<div class="product-card" data-category="fruits">
+      <img src="images/pineapples.jpg" alt="pineapples">
+      <h3>pineapples</h3>
+      <p class="desc">Juicy packed pineapples .Perfect for fresh snacking and smoothies.</p>
+      <p class="price" data-price="4500">UGX 4,500 / Kg</p>
+      <button onclick="addToCart('pineapples', 4500)" class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- ========== VEGETABLES ========== -->
+    <div class="product-card" data-category="vegetables">
+      <img src="images/tomatoes.jpg" alt="Fresh Tomatoes">
+      <h3>Tomatoes</h3>
+      <p class="desc">Red, juicy tomatoes perfect for salads, stews, and sauces.</p>
+      <p class="price" data-price="2500">UGX 2,500 / Kg</p>
+        <button onclick="addToCart('Tomatoes', 3000)" class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-category="vegetables">
+      <img src="images/cabbage.jpg" alt="Green cabbage">
+      <h3>Cabbage</h3>
+      <p class="desc">Firm green cabbage ideal for salads, stir-fries, and stews.</p>
+      <p class="price" data-price="2000">UGX 2,000 / Head</p>
+        <button onclick="addToCart('Cabbage', 2000)" class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-category="vegetables">
+      <img src="images/carrots.jpg" alt="Sweet carrots">
+      <h3>Carrots</h3>
+      <p class="desc">Sweet, crunchy carrots loaded with Vitamin A.</p>
+      <p class="price" data-price="1500">UGX 1,500 / Kg</p>
+        <button onclick="addToCart('Carrots', 1500)" class="add-cart">Add to Cart</button>
+    </div>
+
+    <!-- ========== HERBS ========== -->
+    <div class="product-card" data-category="herbs">
+      <img src="images/ginger.jpg" alt="Fresh ginger root">
+      <h3>Ginger</h3>
+      <p class="desc">Fresh ginger root perfect for tea, cooking, and boosting immunity.</p>
+      <p class="price" data-price="1000">UGX 1,000 / Piece</p>
+        <button onclick="addToCart('Ginger', 1000)" class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-category="herbs">
+      <img src="images/garlic.jpg" alt="Garlic bulbs">
+      <h3>Garlic</h3>
+      <p class="desc">Flavourful garlic cloves used for cooking and health remedies.</p>
+      <p class="price" data-price="500">UGX 500 / Piece</p>
+        <button onclick="addToCart('Garlic', 3000)" class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-category="herbs">
+      <img src="images/mint.jpg" alt="Fresh mint leaves">
+      <h3>Mint</h3>
+      <p class="desc">Refreshing mint leaves perfect for tea and garnishing.</p>
+      <p class="price" data-price="2000">UGX 2,000 / Bunch</p>
+        <button onclick="addToCart('Mint', 2000)" class="add-cart">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+<script src="products.js">
+
+const SearchBox = document.querySelector('.search-box');
+const Productscard = document.querySelectorAll('.product-card');
+
+SearchBox.addEventListener('keyup', function() {
+  let value = this.value.toLowerCase();
+
+  Productscard.forEach(card => {
+    let name = card.querySelector('h3').textContent.toLowerCase();
+
+    // Use display type based on your layout (grid → block works fine)
+    card.style.display = name.includes(value) ? "block" : "none";
+  });
+});
+
+
+
+const filterBtns = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.product-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    let category = btn.dataset.category;
+
+    cards.forEach(card => {
+      card.style.display =
+        category === "all" || card.dataset.category === category
+        ? "block"
+        : "none";
+    });
+  });
+});
+
+
+// SIMPLE ADD TO CART
+// let cart = [];
+
+// document.querySelectorAll('.add-cart').forEach((button, index) => {
+  // button.addEventListener('click', () => {
+    // let name = cards[index].querySelector('h3').textContent;
+    // let price = cards[index].querySelector('.price').textContent;
+
+    // cart.push({ name, price });
+
+    // alert(name + " added to cart!");
+    // console.log(cart);
+  // });
+// });
+
+
+
+
+//MAIN ADD TO CART
+
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+const addToCartButtons = document.querySelectorAll('.add-cart');
+
+addToCartButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const productCard = button.closest('.product-card');
+    const name = productCard.querySelector('h3').textContent;
+    const price = Number(productCard.querySelector('.price').dataset.price);
+
+    const existingItem = cart.find(item => item.name === name);
+
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cart.push({ name, price, quantity: 1 });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    console.log(cart);
+  });
+});
+
+</script>
+<script src="products-data.js"></script>
+
+
+</body>
+</html>

@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 
 </head>
 <body>
     <div class="skewed-header">
-<div class="header-bg" style = "background-image: url('Images/strawberry.jpg');height:400px;"> </div>
+<div class="header-bg" style = "background-image: url('Images/contact1.jpg');height:400px;"> </div>
 <div class="skewed-header-wrapper">
 <div class="skewed-header-content">
 <div class="heading-wrapper">
@@ -37,13 +38,21 @@
     <div class="nav-link">
     <a href="contact.html">Contact</a>
     </div>
+
+
+    <!-- FLOATING CART ICON -->
+    <a href="cart1.html" class="cart-icon">
+    🛒 <span id="cart-count">0</span>
+     </a>
+
+
     </div>
     </div>
     </div>
     </div>
     </div>
     
-    <div class="form">
+    <div class="form"method="POST">
 <div class="form-group">
   <input type="text" id="fullName" placeholder="Your name">  
   <label for="fullName">Your name</label>
@@ -132,5 +141,8 @@
     </div>
     </div>
     
+    <script src="products-data.js"></script>
+    <script src="products.js"></script>
+    <script src="cart-counter.js"></script>
 </body>
 </html>

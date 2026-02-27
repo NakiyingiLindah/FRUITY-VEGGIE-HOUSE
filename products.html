@@ -3,11 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products page</title>
 
-    <link rel="stylesheet" href="styles/products.css">
+<link rel="stylesheet" href="styles/index.css">
+<link rel="stylesheet" href="styles/navigation.css">
+<link rel="stylesheet" href="styles/contact.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link rel="stylesheet" href="styles/products.css">
+
 </head>
 <body>
+
+
+<div class="skewed-header">
+<div class="header-bg" style="background-image:url('Images/contact.jpg'); height: 400px;"></div>
+<div class="skewed-header-wrapper">
+<div class="skewed-header-content">
+<div class="heading-wrapper">
+<h1>Products</h1>
+</div>
+
+<div class="links-wrapper">
+<div class="nav-link">
+<a href="index.html">Home</a>
+</div>
+
+<div class="nav-link">
+<a href="About.html">About Us</a>
+</div>
+
+<div class="nav-link">
+<a href="Products.html">Products</a>
+</div>
+
+<div class="nav-link">
+<a href="Contact.html">Contact</a>
+</div>
+
+
+
+<!-- FLOATING CART ICON -->
+<a href="cart1.html" class="cart-icon">
+    🛒 <span id="cart-count">0</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
 
   <section class="products-section">
   <h1>Our Fresh Products</h1>
@@ -26,173 +74,24 @@
     <button class="filter-btn" data-category="herbs">Herbs</button>
   </div>
 
-  <!-- PRODUCTS GRID -->
-  <div class="products-grid">
 
-    <!-- ========== FRUITS ========== -->
-    <div class="product-card" data-category="fruits">
-      <img src="images/apples.jpg" alt="Fresh Red Apples">
-      <h3>Apples</h3>
-      <p class="desc">Fresh, juicy red apples packed with fiber and vitamins.</p>
-      <p class="price">UGX 5,000 / Kg</p>
-      <button class="add-cart">Add to Cart</button>
-    </div>
+<!-- new way of displaying products  using javascript-->
+ <!-- products will be inserted here by javascript-->
 
-    <div class="product-card" data-category="fruits">
-      <img src="images/bananas.jpg" alt="Sweet ripe bananas">
-      <h3>Bananas</h3>
-      <p class="desc">Sweet and energy-rich bananas ideal for breakfast and smoothies.</p>
-      <p class="price">UGX 3,000 / Bunch</p>
-      <button class="add-cart">Add to Cart</button>
-    </div>
+ <div class="products-grid"></div>
+ </section>
 
-    <div class="product-card" data-category="fruits">
-      <img src="images/oranges.jpg" alt="Citrus oranges">
-      <h3>Oranges</h3>
-      <p class="desc">Vitamin C–rich fresh oranges with a bright citrus flavor.</p>
-      <p class="price">UGX 4,000 / Kg</p>
-      <button class="add-cart">Add to Cart</button>
-    </div>
+ 
+<!-- Load scripts: data first, then logic -->
+<script src="products-data.js"></script>
+ <script src="products.js"></script>
 
-<div class="product-card" data-category="fruits">
-      <img src="images/watermelon.jpg" alt="watermelon">
-      <h3>Watermelon</h3>
-      <p class="desc">Refreshing watermelon . Perfect for hot days and fruit salads.</p>
-      <p class="price">UGX 7,000 / Kg</p>
-      <button class="add-cart">Add to Cart</button>
-    </div>
-
-
-<div class="product-card" data-category="fruits">
-      <img src="images/mangoes.jpg" alt="mangoes">
-      <h3>Mangoes</h3>
-      <p class="desc">Ripe mangoes ideal for eating fresh and making smoothies</p>
-      <p class="price">UGX 4,000 / Kg</p>
-      <button class="add-cart">Add to Cart</button>
-    </div>
-
-
-<div class="product-card" data-category="fruits">
-      <img src="images/pineapples.jpg" alt="pineapples">
-      <h3>Mangoes</h3>
-      <p class="desc">Juicy packed pineapples .Perfect for fresh snacking and smoothies.</p>
-      <p class="price">UGX 4,500 / Kg</p>
-      <button class="add-cart">Add to Cart</button>
-    </div>
-
-    <!-- ========== VEGETABLES ========== -->
-    <div class="product-card" data-category="vegetables">
-      <img src="images/tomatoes.jpg" alt="Fresh Tomatoes">
-      <h3>Tomatoes</h3>
-      <p class="desc">Red, juicy tomatoes perfect for salads, stews, and sauces.</p>
-      <p class="price">UGX 2,500 / Kg</p>
-      <button class="add-cart">Add to Cart</button>
-    </div>
-
-    <div class="product-card" data-category="vegetables">
-      <img src="images/cabbage.jpg" alt="Green cabbage">
-      <h3>Cabbage</h3>
-      <p class="desc">Firm green cabbage ideal for salads, stir-fries, and stews.</p>
-      <p class="price">UGX 2,000 / Head</p>
-      <button class="add-cart">Add to Cart</button>
-    </div>
-
-    <div class="product-card" data-category="vegetables">
-      <img src="images/carrots.jpg" alt="Sweet carrots">
-      <h3>Carrots</h3>
-      <p class="desc">Sweet, crunchy carrots loaded with Vitamin A.</p>
-      <p class="price">UGX 1,500 / Kg</p>
-      <button class="add-cart">Add to Cart</button>
-    </div>
-
-    <!-- ========== HERBS ========== -->
-    <div class="product-card" data-category="herbs">
-      <img src="images/ginger.jpg" alt="Fresh ginger root">
-      <h3>Ginger</h3>
-      <p class="desc">Fresh ginger root perfect for tea, cooking, and boosting immunity.</p>
-      <p class="price">UGX 1,000 / Piece</p>
-      <button class="add-cart">Add to Cart</button>
-    </div>
-
-    <div class="product-card" data-category="herbs">
-      <img src="images/garlic.jpg" alt="Garlic bulbs">
-      <h3>Garlic</h3>
-      <p class="desc">Flavourful garlic cloves used for cooking and health remedies.</p>
-      <p class="price">UGX 500 / Piece</p>
-      <button class="add-cart">Add to Cart</button>
-    </div>
-
-    <div class="product-card" data-category="herbs">
-      <img src="images/mint.jpg" alt="Fresh mint leaves">
-      <h3>Mint</h3>
-      <p class="desc">Refreshing mint leaves perfect for drinks, tea, and garnishing.</p>
-      <p class="price">UGX 2,000 / Bunch</p>
-      <button class="add-cart">Add to Cart</button>
-    </div>
-
-  </div>
-</section>
-
-
-<!--  
-  <div class="products-grid">
-    <div class="product-card">
-      <img src="images/apple.jpg" alt="Red Apples">
-      <h3>Red Apples</h3>
-      <p class="price">UGX 5,000 / Kg</p>
-      <button>Add to Cart</button>
-    </div>
-
-    <div class="product-card">
-      <img src="images/banana.jpg" alt="Bananas">
-      <h3>Bananas</h3>
-      <p class="price">UGX 3,000 / Bunch</p>
-      <button>Add to Cart</button>
-    </div>
-
-    Duplicate more product cards
-  </div>
-</section>
--->
-
-
-
-<script>
-const SearchBox = document.querySelector('.search-box');
-const Productscard = document.querySelectorAll('.product-card');
-
-SearchBox.addEventListener('keyup', function() {
-  let value = this.value.toLowerCase();
-
-  Productscard.forEach(card => {
-    let name = card.querySelector('h3').textContent.toLowerCase();
-
-    // Use display type based on your layout (grid → block works fine)
-    card.style.display = name.includes(value) ? "block" : "none";
-  });
-});
-
-
-
-const filterBtns = document.querySelectorAll('.filter-btn');
-const cards = document.querySelectorAll('.product-card');
-
-filterBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    let category = btn.dataset.category;
-
-    cards.forEach(card => {
-      card.style.display =
-        category === "all" || card.dataset.category === category
-        ? "block"
-        : "none";
-    });
-  });
-});
-
-
-</script>
-
-
+  
 </body>
 </html>
+
+
+
+
+
+

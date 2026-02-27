@@ -53,6 +53,7 @@ body{
   
    }
 
+   
    .form >.form-group{
     margin-top:10px ;
     margin-bottom: 10px;
@@ -160,3 +161,10 @@ body{
 }
 
 
+@media(max-width:768px){
+   .footer{
+height:500px;
+
+  
+   } 
+}
