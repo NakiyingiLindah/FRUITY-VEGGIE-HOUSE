@@ -34,4 +34,10 @@ select{
   color:white;
   border:none;
   cursor:pointer;
+  transition: transform 0.2s opacity 0.2s;
+}
+
+.place-order-btn:hover{
+  opacity: 0.8;
+  transform: scale(1.03);
 }

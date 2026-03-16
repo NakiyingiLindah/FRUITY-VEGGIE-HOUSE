@@ -1,51 +1,3 @@
-/*let cart = JSON.parse(localStorage.getItem('cart')) || [];
-const container = document.querySelector(checkout-items);
-let total = 0;
-cart.forEach(item=> {
-    const div= document.createElement('div');
-});
-div.innerHTML = `
-<p>${item.name}*${item.quantity} </p>
-<p> UGX ${item.price}*${item.quantity} </p>
-`;
-container.appendChild(div);
-document.getElementById(checkout-total).textContent = "UGX" + total.toLocaleString();
-
-
-// handle order submission//
- document.getElementById('checkout-form').addEventListener('submit',e =>{
- e.preventDefault();
- alert("Order placed successfully");
- localStorage.removeItem('cart');
- window.location.href="products.html";
-});
-
-
-
-
-
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-const checkoutItems = document.querySelector('.checkout-items');
-const totalDisplay = document.getElementById('checkout-total');
-function rendercheckout(){
-checkoutItems.innerHTML="";
-let total = 0:
-cart.forEach(item=> {
-const div = document.createElement('div');
-div.innerHTML=`
-<p>${item.name}*${item.quantity}</p>
-<p> UGX ${item.price}*${item.quantity}</p>
-`;
-
-checkoutItems.appendChild('div')
-total += item.price * item.quantity;
-});
-
-totalDisplay.textContent="UGX"+ total.toLocaleString();
-rendercheckout();
-*/
-
-
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -80,6 +32,8 @@ function renderCheckout(){
 renderCheckout();
 
 
+
+
 /*===== HANDLE ORDER SUBMISSION 
 
 checkoutForm.addEventListener('submit', e => {
@@ -94,9 +48,6 @@ checkoutForm.addEventListener('submit', e => {
 
 });
 */
-
-
-
 document.getElementById('checkout-form').addEventListener('submit', e => {
   e.preventDefault();
 
@@ -113,3 +64,64 @@ const order = {
 
   window.location.href = "order-confirmation.html";
 });
+
+
+
+const checkoutBtn = document.querySelector('.checkout-btn');
+if( cart.length === 0){
+  checkoutBtn.disabled = true;
+} else {
+   checkoutBtn.disabled = false;
+}
+
+
+
+const form = document.getElemntById(".checkout-form");
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+})
+const name = document.getElementById('name')
+const phone = document.getElementById('phone')
+const address = document.getElementById('address')
+const email= document.getElementById('email')
+
+let valid = true;
+
+if(name.value.trim() === ""){
+  name.classList.add("error");
+  valid = false;
+} else{
+  name.classList.remove("error")
+  name.classList.add("success")
+}
+
+
+if(!email.value.includes("@")){
+  email.classList.add("error");
+  valid = false;
+} else{
+  email.classList.remove("error")
+  email.classList.add('success')
+}
+
+
+if(phone.value.trim() === ""){
+  phone.classList.add("error");
+  valid = false;
+} else{
+  phone.classList.remove("error")
+  phone.classList.add("success")
+}
+
+if(address.value.trim() === ""){
+  address.classList.add("error");
+  valid = false;
+} else{
+  address.classList.remove("error")
+  address.classList.add("success")
+}
+
+if(valid){
+ alert("order placed successfully") ;
+
+form.Submit(); }

@@ -102,6 +102,31 @@ function updateCartCount() {
 // Initialize cart counter
 updateCartCount();
 
+//=== BOUNCE ANIMATION ====
+
+const cartCount = document.getElementById('cart-count');
+cartCount.classList.add("bounce")
+setTimeout(() => {
+  cartCount.classList.remove("bonce");}, 300);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

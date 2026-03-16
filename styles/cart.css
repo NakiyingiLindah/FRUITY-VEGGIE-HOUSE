@@ -70,11 +70,13 @@ border-radius: 8px;
   cursor: pointer;
 }
 
+
 .item-quantity{
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 
 .qty-btn{
     width:80px;
@@ -83,7 +85,7 @@ border-radius: 8px;
     border-radius: 10px;
     background-color: #ddd;
     cursor: pointer;
-    border: none;
+    border: none; 
     font-size: 20px;
 }
 
