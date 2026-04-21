@@ -49,6 +49,7 @@
     </div>
     </div>
     
+    <!--  
     <form id="contactForm"></form>
 <div class="form-group">
   <input type="text" id="fullName" placeholder="Your name">  
@@ -58,7 +59,7 @@
 
 <div class="form-group">
 <input type="email" id="email" placeholder="Your Email">
-<label for="email"> Your email</label>
+
 </div>
 
 <div class="form-group">
@@ -71,16 +72,39 @@
 
    <div class="centered-btn-wrapper">
 
-<!-- <button type="submit" class="btn">Send</button> -->
+<button type="submit" class="btn">Send</button>
 <a href="https://wa.me/+256772845457" class="btn">Send</a>
-   </div>  
-</div>
-</div>
-</div>
+  
+-->
 
+
+<form id="contactForm">
+  <div class="form-group">
+    <input type="text" id="fullName" placeholder="Your Name">
+    <label for="Full name">Your Name</label>
+  </div>
+
+  <div class="form-group">
+    <input type="email" id="email" placeholder="Your Email">
+    <label for="email">Your Email</label>
+  </div>
+
+  <div class="form-group">
+    <textarea id="message" placeholder="Message"></textarea>
+    <label for="message">Your Message</label>
+  </div>
+
+
+  <div class="centered-btn-wrapper">
+    <button type="submit" class="btn">Send</button>
+  </div>
+</form>
 
 <div class="spacer60"></div>
-
+ </div>  
+</div>
+</div>
+</div>
 
 <div class="footer">
     <div class="text-wrapper">
@@ -152,7 +176,7 @@
 
   let whatsappMessage = `Hello, my name is ${name}%0AEmail: ${email}%0AMessage: ${message}`;
 
-  let url = `https://wa.me/${phone}?text=${whatsappMessage}`;
+  let url = `https://wa.me/${256772845457}?text=${whatsappMessage}`;
 
   window.open(url, "_blank");
 });
