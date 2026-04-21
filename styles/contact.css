@@ -123,6 +123,8 @@ body{
    padding: 10px  25px;
    outline: none;
    transition: 0.3s;
+   cursor: pointer;
+   text-decoration: none;
    }
 
 
