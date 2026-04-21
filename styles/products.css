@@ -114,7 +114,7 @@ border-radius: 10px;
 
 
 .cart-icon {
-  position: fixed;
+  position:absolute;
   top: 20px;
   right: 20px;
   background: green;
