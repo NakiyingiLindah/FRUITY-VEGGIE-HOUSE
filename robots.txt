@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fruityveggiehouse.netlify.app/sitemap.xml
-
+Sitemap: https://fruity-veggie-house.netlify.app/sitemap.xml
 
