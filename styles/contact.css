@@ -22,7 +22,7 @@ body{
      width: 100%;
      background-repeat: no-repeat;
      background-size: 100%;
-     transform: skewY(-6deg);
+     transform: skewY(-5deg);
      transform-origin: top left;
      filter: brightness(50%);
  }
@@ -163,7 +163,12 @@ body{
 @media(max-width:768px){
    .footer{
 height:500px;
+   }
 
-  
-   } 
+
+}
+
+
+@media(max-width:480px){
+
 }

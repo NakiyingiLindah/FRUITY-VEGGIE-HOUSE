@@ -169,7 +169,7 @@ font-size: 0.9em;
     color:#cbcbcb;
     font-family: sans-serif;
     font-size:15px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     padding:10px;
     transition: 0.5s;
@@ -204,3 +204,119 @@ transition:0.5s;
 
     }
 
+
+    @media screen and (max-width:768px){
+       .navigation-wrapper{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+ 
+
+
+.left-column >.contact-hours-wrapper >.phone{
+    color:#cbcbcb;
+    font-size: 12px;
+    margin-bottom: 10px;
+   
+}
+
+.left-column >.contact-hours-wrapper > .hours{
+    color: #cbcbcb;
+    font-size: 1em;
+    
+}
+
+.navigation-wrapper >.left-column >.icons i { 
+    padding-bottom:10px;
+    padding-top:10px ;
+    color:#cbcbcb;
+    font-size:3em;
+}
+
+.navigation-wrapper >.left-column >.icons i{
+    font-size:3em;
+}
+
+.navigation-wrapper >.right-column >.contact-icon i{
+    /* margin-right: 25px; */
+    font-size: 3em;
+    /* padding-right:20px; */
+    /* color: #cbcbcb; */
+   padding-top: 10px;
+   /* align-items: center; */
+   /* flex-direction: column; */
+     order: 1;
+  
+
+}
+
+.navigation-wrapper >.right-column >.contact-icon i:hover{
+    color:#cea135;
+    transition: 0.5s;
+}
+
+
+.text-wrapper h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family:sans-serif ;
+    text-align: center;
+    /* flex: 1; */
+}
+
+.text-wrapper h3{
+text-align: center;
+font-family: sans-serif;
+font-size: 1em;
+
+}
+ .links-wrapper{
+ flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    padding-top:20px;
+}
+
+.links-wrapper > .nav-link a{
+    
+    text-decoration: none;
+    color:#cbcbcb;
+    font-family: sans-serif;
+    font-size:18px;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding:10px;
+    transition: 0.5s;
+}
+ .links-wrapper > .nav-link a:hover{
+        letter-spacing: 2px;
+        color:#cea135;
+    }
+
+
+    .navigation-wrapper > .right-column{
+flex-direction: column;
+text-align: center;
+    }
+
+    .navigation-wrapper >.right-column >.Address-wrapper{
+       padding-right: 20px;
+       padding-top: 10px;
+        text-align: center;
+        font-size: 1rem;
+       
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+    .navigation-wrapper >.left-column >.icons i { 
+    /* padding-bottom:5%; */
+    /* padding-top:20%; */
+   
+}
+
+}

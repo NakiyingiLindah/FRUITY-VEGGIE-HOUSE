@@ -191,16 +191,6 @@ body{
         
     }
 
-
-
-
-
-
-
-
-
-
-
 }
 
 /* -------------------------------- */
@@ -208,9 +198,9 @@ body{
 /* -------------------------------- */
 @media (min-width: 601px) and (max-width: 1024px) {
     .navigation-wrapper {
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* text-align: center; */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .left-column, .center-column, .right-column {
@@ -219,8 +209,8 @@ body{
     }
 
     .links-wrapper {
-        /* flex-wrap: wrap; */
-        /* justify-content: center; */
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 15px;
     }
 
