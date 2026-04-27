@@ -1,9 +1,20 @@
-body{
+
+
+*{
     margin: 0;
     padding: 0;
-    font-family:sans-serif;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
+
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+
+
+}
+
+
+
 
 .skewed-header{
    height: 400px; 
@@ -51,8 +62,9 @@ body{
   }
 
  .page-container{ 
-    padding: 10px;
+    padding: 40px;
    justify-content: center;
+   align-items: center;
     display: flex;
   }
 
@@ -74,9 +86,10 @@ body{
   
 .page-container >.content-wrapper p{
 /* line-height: 30px; */
-letter-spacing: 1px;
+/* letter-spacing: 1px; */
 font-size:15px;
 font-family:sans-serif;
+padding: 20px;
 
   }
 
@@ -123,15 +136,15 @@ font-family:sans-serif;
   }
 
 
-  @media(max-width:768px){
+  @media screen and (max-width:768px){
     .square >.img-wrapper img{
     width: 100%;
     /* max-width:500px; */
     height: 300px;
     object-fit:cover;
-    margin: 30px;
-    /* padding: 10px; */
-    border-radius: 20px;
+    /* margin: 30px; */
+    padding: 10px 20px;
+    border-radius: 5%;
 
   }
 
@@ -154,7 +167,7 @@ font-family:sans-serif;
     color: #cea135;
     font-size: 20px;
     flex-direction: column;
-    line-height: 1.6;
+    line-height: 1.8;
     text-align: center;
     align-items: center;
   }
@@ -165,6 +178,8 @@ font-family:sans-serif;
     line-height: 1.6;
     text-align: center;
     align-items: center;
+    padding:20px;
+    font-family: sans-serif;
   }
 
 
@@ -180,9 +195,10 @@ font-family:sans-serif;
  .page-container>.content-wrapper > #juice{
     width:500px;
     margin: 20px;
+    /* padding: 10px 20px; */
     /* float: left; */
-    border :1px solid #cea135;
-    border-radius: 20px;
+    /* border :1px solid #cea135; */
+
   }
 
 .page-container >.content-wrapper p{
@@ -190,9 +206,81 @@ text-align: center;
 align-items: center;
 font-size:12px;
 line-height: 1.6;
-margin: 20px;
+/* margin: 20px; */
+padding:20px;
 flex-direction: column;
 
   }
+
+
+
+  
+.page-container >.content-wrapper p{
+line-height: 30px;
+/* letter-spacing: 1px; */
+font-size:15px;
+font-family:arial;
+padding: 20px;
+
+  }
+
+
+
+
+
+
+
+  }
+
+
+
+
+  @media screen and (max-width:480px){
+    .square >.square-text-wrapper h1{
+    color: #cea135;
+    font-size: 20px;
+    flex-direction: column;
+    line-height: 1.8;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .square >.square-text-wrapper p{
+    font-size: 15px;
+    flex-direction: column;
+    line-height: 1.6;
+    text-align: center;
+    align-items: center;
+    padding:20px;
+    font-family: sans-serif;
+  }
+
+  
+.page-container >.content-wrapper p{
+line-height:1.6;
+/* letter-spacing: 1px; */
+font-size:15px;
+font-family:sans-serif;
+padding: 20px;
+
+
+  }
+
+
+ .page-container>.content-wrapper > #juice{
+    width:500px;
+    margin: 20px;
+   
+
+  }
+
+
+
+
+
+
+
+
+
 
   }
