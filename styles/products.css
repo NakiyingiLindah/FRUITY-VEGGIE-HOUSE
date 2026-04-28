@@ -69,14 +69,21 @@ padding: 12px 15px;
     transform: translateY(-5px);
 }
    
-.product-card img{
-object-fit: cover;
-width: 100%;
-max-width: 350px;
-height:200px;
-border-radius:10px;
 
+
+.product-card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius:10px;
 }
+
+
+
+
+
+
+
 
 .product-card h3 {
   margin: 12px 0;
@@ -103,7 +110,6 @@ border-radius:10px;
 
 .product-card button {
   width: 100%;
-  max-width: 400px;
   padding: 10px;
   background: green;
   color: white;

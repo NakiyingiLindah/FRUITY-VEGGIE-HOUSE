@@ -35,7 +35,8 @@ body{
  }
  
  .skewed-header>.skewed-header-wrapper>.skewed-header-content{
-     width: 1000px;
+     width: 100%;
+     max-width: 1000px;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -159,16 +160,3 @@ body{
     transform: translateY(1rem);
 }
 
-
-@media(max-width:768px){
-   .footer{
-height:500px;
-   }
-
-
-}
-
-
-@media(max-width:480px){
-
-}

@@ -81,7 +81,7 @@ body{
 
   .spacer60{
     width: 100%;
-    height: 60px;
+    height: 20px;
   }
   
 .page-container >.content-wrapper p{
@@ -99,7 +99,9 @@ padding: 20px;
   }
 
   .squares-wrapper >.squares{
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
   }
 
   .squares-wrapper >.squares >.square{
@@ -110,6 +112,7 @@ padding: 20px;
 
   .square >.img-wrapper img{
     width: 100%;
+    max-width: 500px;
     height: 300px;
     object-fit:cover;
   }
@@ -139,14 +142,13 @@ padding: 20px;
   @media screen and (max-width:768px){
     .square >.img-wrapper img{
     width: 100%;
-    /* max-width:500px; */
+    max-width:650px;
     height: 300px;
-    object-fit:cover;
-    /* margin: 30px; */
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 5%;
 
   }
+
 
 .square >.img-wrapper img:hover{
  transform: translateY(-10px);
@@ -193,94 +195,37 @@ padding: 20px;
 
 
  .page-container>.content-wrapper > #juice{
-    width:500px;
-    margin: 20px;
-    /* padding: 10px 20px; */
-    /* float: left; */
-    /* border :1px solid #cea135; */
+    width:100%;
+    max-width: 500px;
+    margin: 10px 10px;
 
   }
 
 .page-container >.content-wrapper p{
 text-align: center;
-align-items: center;
 font-size:12px;
 line-height: 1.6;
-/* margin: 20px; */
 padding:20px;
-flex-direction: column;
 
   }
 
-
-
-  
-.page-container >.content-wrapper p{
-line-height: 30px;
-/* letter-spacing: 1px; */
-font-size:15px;
-font-family:arial;
-padding: 20px;
-
   }
-
-
-
-
-
-
-
-  }
-
 
 
 
   @media screen and (max-width:480px){
-    .square >.square-text-wrapper h1{
-    color: #cea135;
-    font-size: 20px;
-    flex-direction: column;
-    line-height: 1.8;
-    text-align: center;
-    align-items: center;
-  }
+
   
   .square >.square-text-wrapper p{
     font-size: 15px;
-    flex-direction: column;
-    line-height: 1.6;
-    text-align: center;
-    align-items: center;
     padding:20px;
     font-family: sans-serif;
   }
 
   
 .page-container >.content-wrapper p{
-line-height:1.6;
-/* letter-spacing: 1px; */
 font-size:15px;
-font-family:sans-serif;
 padding: 20px;
-
-
+  
   }
-
-
- .page-container>.content-wrapper > #juice{
-    width:500px;
-    margin: 20px;
-   
-
-  }
-
-
-
-
-
-
-
-
-
-
-  }
+}
